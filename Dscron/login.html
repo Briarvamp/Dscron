@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Dscron</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+
+  <div class="form-box">
+    <div class="button-box">
+      <button id="btnLogin" onclick="showLogin()">Login</button>
+      <button id="btnRegister" onclick="showRegister()">Cadastro</button>
+    </div>
+
+    <div class="form-container">
+      <form id="loginForm" class="form active">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Senha" required />
+        <button type="submit" class="submit-btn">Entrar</button>
+      </form>
+
+      <form id="registerForm" class="form">
+        <h2>Cadastro</h2>
+        <input type="text" placeholder="Nome completo" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Senha" required />
+        <button type="submit" class="submit-btn">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
