@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dscron - Painel do Professor</title>
+    <link rel="stylesheet" href="professor-style.css" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Dscron</h1>
+            <div class="user-info">
+                <span class="user-welcome">Bem-vindo(a), Prof. <span id="teacherName">Carregando...</span></span>
+                <button class="logout-button" onclick="logout()">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>🎓 Painel do Professor</h2>
+            <p>Gerencie suas turmas e atividades pedagógicas de forma eficiente</p>
+        </section>
+
+        <section class="dashboard-grid">
+            <button class="nav-button" onclick="location.href='turmas.html'">
+                <span class="button-icon">👥</span>
+                <div class="button-title">Minhas Turmas</div>
+                <div class="button-description">Visualize e gerencie suas turmas e alunos</div>
+            </button>
+
+            <button class="nav-button" onclick="location.href='chamada-professor.html'">
+                <span class="button-icon">📋</span>
+                <div class="button-title">Fazer Chamada</div>
+                <div class="button-description">Registre a presença dos alunos em suas aulas</div>
+            </button>
+
+            <button class="nav-button" onclick="location.href='notas.html'">
+                <span class="button-icon">📊</span>
+                <div class="button-title">Lançar Notas</div>
+                <div class="button-description">Registre avaliações e acompanhe o desempenho</div>
+            </button>
+
+            <button class="nav-button" onclick="location.href='atividades.html'">
+                <span class="button-icon">📝</span>
+                <div class="button-title">Atividades</div>
+                <div class="button-description">Crie e acompanhe tarefas e projetos</div>
+            </button>
+
+            <button class="nav-button" onclick="location.href='comunicados.html'">
+                <span class="button-icon">📢</span>
+                <div class="button-title">Comunicados</div>
+                <div class="button-description">Envie avisos para alunos e responsáveis</div>
+            </button>
+
+            <button class="nav-button" onclick="location.href='relatorios.html'">
+                <span class="button-icon">📈</span>
+                <div class="button-title">Relatórios</div>
+                <div class="button-description">Gere relatórios de desempenho e frequência</div>
+            </button>
+        </section>
+
+        <section class="teacher-tools">
+            <h3 class="tools-title">🛠️ Ferramentas Pedagógicas</h3>
+            <div class="tools-grid">
+                <button class="tool-button" onclick="location.href='planejamento.html'">
+                    📅 Plano de Aula
+                </button>
+                <button class="tool-button" onclick="location.href='biblioteca.html'">
+                    📚 Biblioteca de Recursos
+                </button>
+                <button class="tool-button" onclick="location.href='cronograma.html'">
+                    ⏰ Cronograma
+                </button>
+                <button class="tool-button" onclick="location.href='feedback.html'">
+                    💬 Feedback dos Alunos
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Dscron. Todos os direitos reservados. | Versão Professor
+    </footer>
+
+    <script src="professor-script.js"></script>
+</body>
+</html>
